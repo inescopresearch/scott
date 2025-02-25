@@ -1,0 +1,20 @@
+training_type: 'eval'
+checkpoint_path: './logs/ssl/flowers102_full/scott_12_16_224_1740382712'
+checkpoint_weights: 'context-encoder_checkpoint.pth'
+dataset_name: 'flowers102_full_eval'
+training:
+  seed: 47
+  batch_size: 64
+  num_workers: 4
+  device_number: 0
+  num_epochs: 100
+  lr_warmup_epochs: 20
+  lr_peak: 0.0005
+  lr_start: 0.000001
+  lr_final: 0.00001
+  lr_flat_pctg: 0.72
+  wd_start: 0.04
+  wd_final: 0.4
+logging:
+  root_folder: './logs/'
+  log_to_wandb: True

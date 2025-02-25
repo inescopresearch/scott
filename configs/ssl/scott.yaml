@@ -1,0 +1,46 @@
+training_type: 'ssl'
+dataset_name: 'flowers102_full'
+datasets_root: ''
+model:
+  name: 'scott'
+  img_size: 224
+  patch_size: 16
+  in_channels: 3
+  embed_dim: 384
+  depth: 12
+  num_heads: 4
+  dropout_rate: 0.2
+  attention_dropout: 0.1
+  stochastic_depth_rate: 0.1
+  num_register_tokens: 0
+  ffn_layer: 'swiglu' # 'mlp' o 'swiglu'
+  mlp_ratio: 0 # Only necessary when ffn_layer is 'mlp'
+predictor:
+  depth: 3
+masking:
+  type: 'blockwise' #  'blockwise' or 'uniform'
+  ratio: 0.60 # = (masked_patches / total_patches)
+transforms:
+  crop_scale: [0.2, 1.0]
+  type: 'diff' # 'none', 'diff', or 'same'
+training:
+  seed: 47
+  batch_size: 64
+  num_workers: 4
+  device_number: 0
+  num_epochs: 300
+  lr_warmup_epochs: 40
+  lr_peak: 0.0005
+  lr_start: 0.000001
+  lr_final: 0.00001
+  lr_flat_pctg: 0.72
+  wd_start: 0.04
+  wd_final: 0.4
+  ema_schedule: "linear" # linear
+  ema_start: 0.996
+  ema_final: 1.0
+logging:
+  root_folder: './logs/'
+  log_to_wandb: True
+
+
