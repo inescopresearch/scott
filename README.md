@@ -38,13 +38,13 @@ $ python main.py --config_file ./configs/eval/classifier.yaml
 ## Citation
 
 ```
-@article{velezgarcia2025escapingbigdatassl,
-         title={Escaping the Big Data Paradigm in Self-Supervised Representation Learning}, 
-         author={Carlos Vélez-García and Miguel Cazorla and Jorge Pomares},
-         year={2025},
-         eprint={},
-         archivePrefix={arXiv},
-         primaryClass={cs.CV},
-         url={}, 
+@misc{garcía2025escapingbigdataparadigm,
+      title={Escaping The Big Data Paradigm in Self-Supervised Representation Learning}, 
+      author={Carlos Vélez García and Miguel Cazorla and Jorge Pomares},
+      year={2025},
+      eprint={2502.18056},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.18056}, 
 }
 ```
