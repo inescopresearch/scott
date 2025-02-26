@@ -1,6 +1,6 @@
 # __Escaping the Big Data Paradigm in Self-Supervised Representation Learning__
 
-[[Paper]]() by [Carlos Vélez García](https://github.com/cvg25), Miguel Cazorla and Jorge Pomares.
+[[Paper]](http://arxiv.org/abs/2502.18056) by [Carlos Vélez García](https://github.com/cvg25), Miguel Cazorla and Jorge Pomares.
 
 ![figure](assets/pca-viz.png)
 <em style="text-align: justify">**Matching different semantic parts across categories and poses**. We show the first 3 components of a PCA computed among the token embeddings of images from the same column (a, b, and c). The background is removed by thresholding the first component. Notably, semantically similar parts are matched by color despite belonging to different object classes and poses. For instance: in (a) animal claws are purple and torso pink, in (b) wings are green and torso red. Interestingly, once background is removed in (c), different flower disks are matched to different colors.</em>
